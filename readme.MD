@@ -1,0 +1,1 @@
+Este é um projeto de tema Wordpress para imobiliárias com intuito de ser fácil de usar e atraente para o usuário final.
