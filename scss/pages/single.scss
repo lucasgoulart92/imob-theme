@@ -1,0 +1,161 @@
+.single {
+    background-color: #fff;
+    &__content {
+        padding-bottom: 90px;
+        &__foto {
+            height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &__txt {
+            padding: 20px 10px;
+            p, h2 {
+                color: #5e5e5e;
+                text-align: justify;
+            }
+            h2 {
+                font-size: 22px;
+                font-weight: 700;
+                color: #b40c0c;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 30px 0;
+                img {
+                    width: 50%;
+                    float: left;
+                    padding: 5px;
+                    height: auto;
+                    margin-bottom: 30px;
+                }
+                img:first-child {
+                    width: 100%;
+                    margin: 0;
+                }
+                img:first-child:hover {
+                    transform: scale(1.2);
+                }
+                img:hover {
+                    transform: scale(2);
+                }
+            }
+            ul.__detalhes {
+                width: 200px;
+                height: fit-content;
+                margin-bottom: 30px;
+                li {
+                    color: #6e6e6e;
+                    margin-bottom: 8px;
+                    img {
+                        width: 20px;
+                        margin-right: 4px;
+                        margin-bottom: -3px;
+                    }
+                }
+                li.diferenciais {
+                    font-weight: 500;
+                }
+                li.diferenciais::before {
+                    content: '!';
+                    font-weight: 700;
+                    margin-right: 6px;
+                    padding: 0 3px;
+                    color: #b40c0c;
+                }
+            }
+            h5.preco {
+                font-weight: 700;
+                font-style: italic;
+                color: #b40c0c;
+                display: inline;
+                font-size: 22px;
+                margin-top: 20px;
+            }  
+            h5.rs {
+                font-weight: 700;
+                font-style: italic;
+                color: #b40c0c;
+                display: inline;
+            }
+            h5.centavos {
+                font-style: italic;
+                color: #b40c0c;
+                display: inline;
+                font-size: 12px;
+                margin-left: -4px;
+                font-weight: 100;
+            }
+            h4 {
+                margin-top: 30px;
+                margin-bottom: 0;
+                font-weight: 100;
+                font-size: 14px;
+                color: #6e6e6e;
+            }
+            h4::before {
+                content: url('img/icons/location.png');
+                display: inline;
+                width: 20px;
+                margin-right: 3px;
+            }
+            &__form {
+                text-align: center;
+                padding-top: 40px;
+                a.openform {
+                    background-color: #b40c0c;
+                    color: #fff;
+                    padding: 8px 40px;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                }
+                a.openform:hover {
+                    opacity: 0.7;
+                }
+            } 
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .single {
+        &__content {
+            &__foto {
+                margin-top: 0;
+                height: 640px;
+                background-position: bottom;
+            }
+            &__txt {
+                width: 960px;
+                margin: 0 auto;
+                &__grid {
+                    display: grid;
+                    grid-template-columns: 600px 360px;
+                    grid-template-rows: 160px auto;
+                    &__detalhes {
+                        grid-column-start: 2;
+                        padding: 10px 40px;
+                        ul.__detalhes {
+                            width: 100%;
+                            li {
+                                margin: 10px 0;
+                            }
+                        }
+                    }
+                    &__text {
+                        grid-column-start: 1;
+                        grid-row-start: 1;
+                        grid-row-end: 3;
+                    }
+                }
+                h2 {
+                    font-size: 22px;
+                }
+                &__form {
+                    text-align: left;
+                    padding: 40px 40px;
+                }
+            }
+        }
+    }
+}

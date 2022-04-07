@@ -1,0 +1,151 @@
+body {
+    background-color: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(238, 238, 238);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(98, 0, 98);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(161, 0, 161);
+  }
+
+header {
+    .header__320px {
+        height: 80px;
+        width: 100%;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgb(58, 0, 58);
+        a {
+            img.logo {
+            width: 50px;
+            }
+        }
+        button.abremenu {
+            width: 40px;
+            position: absolute;
+            top: 30px;
+            right: 20px;
+        }
+        nav.headermenu {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 280px;
+            height: -webkit-fill-available;
+            background-color: #fff;
+            padding: 90px 20px;
+            button.fechamenu {
+                width: 25px;
+                position: absolute;
+                right: 40px;
+            }
+            a {
+                display: block;
+                color: #b40c0c;
+                margin-bottom: 20px;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            a:hover {
+                margin-left: 10px;
+            }
+            img {
+                position:absolute;
+                width: 120px;
+                bottom: 40px;
+            }
+        }
+        nav.hiddenmenu {
+            right: -280px;
+        }
+    }
+    .header__1024px {
+        display: none;
+    }
+    @media(min-width: 1024px) {
+        .header__320px {
+            display: none;
+        }
+        .header__1024px {
+            display: block;
+            &__contatos {
+                p.telefone {
+                    position: absolute;
+                    top: 20px;
+                    left: 30px;
+                    font-size: 14px;
+                    color: #fff;
+                }
+                &__horarios {
+                    position: absolute;
+                    top: 20px;
+                    right: 30px;
+                    p {
+                        display: inline;
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                    p.horario {
+                        color: #b40c0c;
+                    }
+                }
+            }
+            &__menu {
+                width: 960px;
+                margin: 0 auto;
+                margin-top: 80px;
+                display: grid;
+                grid-template-columns: 160px auto;
+                a {
+                    img {
+                        width: 100px;
+                    }
+                }
+                .menu-cabecalho-container {
+                    grid-column-start: 2;
+                    grid-row-start: 1;
+                    padding: 20px 20px;
+                    nav.headermenu__content {
+                        padding: 20px 20px;
+                        border-top: 1px solid #b40c0c;
+                        border-bottom: 1px solid #b40c0c;
+                    }
+                    ul {
+                        padding: 20px 20px;
+                        border-top: 1px solid #b40c0c;
+                        border-bottom: 1px solid #b40c0c;
+                        li {
+                            display: inline;
+                            text-transform: uppercase;
+                        }
+                    }
+                    a {
+                        margin: 0 20px;
+                        color: #fff;
+                    }
+                    a:hover {
+                        color: #b40c0c;
+                    }
+                }
+            }
+        }
+    }
+}

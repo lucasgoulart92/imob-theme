@@ -1,0 +1,51 @@
+.funcionarios {
+    background-color: #fff;
+    text-align: center;
+    padding: 90px 0;
+    h2 {
+        color: #b40c0c;
+        font-size: 24px;
+    }
+    &__content {
+        width: 300px;
+        padding: 40px 10px;
+        margin: 0 auto;
+        &__item {
+            padding: 40px 0;
+            border-radius: 20px 10px;
+            box-shadow: 0 0 20px #c3c3c3;
+            &__foto {
+                width: 220px;
+                height: 240px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 20px 10px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+            h3, h4 {
+                color: #414141;
+                font-size: 16px;
+                font-weight: 100;
+            }
+            h3 {
+                font-weight: 700;
+                font-size: 20px;
+            }
+            h4.cargo {
+                padding: 3px 10px;
+                border-radius: 3px;
+                background-color: #b40c0c;
+                color: #fff;
+                font-size: 12px;
+                width: fit-content;
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+            h4.contato {
+                font-size: 14px;
+            }
+        }
+    }
+}

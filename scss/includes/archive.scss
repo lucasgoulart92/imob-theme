@@ -1,0 +1,150 @@
+.results {
+    background-color: #fff;
+    padding-top: 90px;
+    h2 {
+        padding: 60px 40px 20px 40px;
+        color:#b40c0c;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__content {
+        padding: 80px 0;
+        width: 320px;
+        margin: 0 auto;
+        &__item {
+            border-radius: 20px 10px;
+            box-shadow: 0px 10px 18px #c0c0c0;
+            margin-bottom: 40px;
+            text-align: center;
+            padding-bottom: 60px;
+            &__foto {
+                height: 200px;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-origin: center;
+                background-position-y: bottom;
+                border-radius: 20px 10px 0 0;
+                margin-bottom: 20px;
+                padding-top: 181px;
+                h3 {
+                    font-weight: 100;
+                    background-color: #b40c0c;
+                    padding: 3px 16px;
+                    font-size: 12px;
+                    width: fit-content;
+                }
+            }
+            a, p {
+                color: #414141;
+                margin: 6px 0;
+                width: 200px;
+                margin: 0 auto;
+            }
+            a {
+                font-size: 18px;
+                font-weight: 700;
+                color: #b40c0c;
+                text-transform: uppercase;
+            }
+            ul.__detalhes {
+                width: 200px;
+                height: 116px;
+                margin: 16px auto;
+                border-top: 1px solid #d8d8d8;
+                border-bottom: 1px solid #d8d8d8;
+                li {
+                    color: #6e6e6e;
+                    margin: 12px 0;
+                    img {
+                        width: 20px;
+                        margin-right: 4px;
+                        margin-bottom: -3px;
+                    }
+                }
+                li.diferenciais {
+                    font-weight: 500;
+                }
+                li.diferenciais::before {
+                    content: '!';
+                    font-weight: 700;
+                    margin-right: 6px;
+                    padding: 0 3px;
+                    color: #b40c0c;
+                }
+            }
+            h5.preco {
+                font-weight: 700;
+                font-style: italic;
+                color: #b40c0c;
+                display: inline;
+                font-size: 22px;
+                margin-top: 20px;
+            }  
+            h5.rs {
+                font-weight: 700;
+                font-style: italic;
+                color: #b40c0c;
+                display: inline;
+            }
+            h5.centavos {
+                font-style: italic;
+                color: #b40c0c;
+                display: inline;
+                font-size: 12px;
+                margin-left: -4px;
+                font-weight: 100;
+            }
+            h4 {
+                margin-top: 30px;
+                margin-bottom: 0;
+                font-weight: 100;
+                font-size: 14px;
+                color: #6e6e6e;
+            }
+            h4::before {
+                content: url('img/icons/location.png');
+                display: inline;
+                width: 20px;
+                margin-right: 3px;
+            }
+            p {
+                height: 40px;
+            }
+            p {
+                height: 80px;
+                color: #6e6e6e;
+                font-size: 12px;
+            }
+            a.permalink {
+                background-color: #b40c0c;
+                color: #fff;
+                padding: 8px 40px;
+                border-radius: 3px;
+            }
+        }
+    }
+    .search {
+        padding: 40px 0;
+        min-height: 300px;
+        h2 {
+            display: none;
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    .results {
+        padding: 0;
+        &__content {
+            width: 960px;
+            display: grid;
+            grid-template-columns: 310px 310px 310px;
+            grid-gap: 20px;
+            &__item {
+                width: 300px;
+            }
+        }
+    }
+}

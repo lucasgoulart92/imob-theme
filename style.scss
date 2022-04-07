@@ -1,0 +1,23 @@
+/* 
+    Theme name: Imobiliária 2.0
+    Author: Lucas Goulart
+    Version: v1.0
+    Author URL: lucasgoulart.com.br
+*/
+
+@import 'scss/vendor/normalize.scss';
+@import 'scss/vendor/reset.scss';
+
+@import 'scss/pages/header.scss';
+@import 'scss/pages/index.scss';
+@import 'scss/pages/footer.scss';
+@import 'scss/pages/single.scss';
+@import 'scss/pages/404.scss';
+@import 'scss/pages/contato.scss';
+
+@import 'scss/includes/search.scss';
+@import 'scss/includes/depoimentos.scss';
+@import 'scss/includes/equipe.scss';
+@import 'scss/includes/parceiros.scss';
+@import 'scss/includes/destaque.scss';
+@import 'scss/includes/archive.scss';

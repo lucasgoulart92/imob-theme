@@ -1,0 +1,163 @@
+.destaques {
+    padding-bottom: 40px;
+    padding-bottom: 160px;
+    text-align: center;
+    margin-top: -120px;
+    a.destaques-vermais {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        background-color: purple;
+        text-transform: uppercase;
+        padding: 8px 40px;
+        border-radius: 3px;
+        margin-top: 80px;
+    }
+    &__content {
+        width: 320px;
+        margin: 0 auto 60px auto;
+        background-color: #fff;
+        border-radius: 20px;
+        &__item {
+            border-radius: 20px;
+            width: 320px;
+            box-shadow: 0px 10px 12px #c0c0c0;
+            margin-bottom: 40px;
+            text-align: center;
+            padding-bottom: 40px;
+            &__foto {
+                height: 200px;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-origin: center;
+                border-radius: 20px 20px 0 0;
+                margin-bottom: 20px;
+                text-align: left;
+                padding-top: 181px;
+                h3.categoria {
+                    font-weight: 100;
+                    font-size: 12px;
+                    width: fit-content;
+                    color: #fff;
+                    background-color: purple;
+                    padding: 8px 22px;
+                    border-radius: 0 15px 15px 0;
+                }
+            }
+            h4 {
+                margin-top: 30px;
+                margin-bottom: 0;
+                font-weight: 100;
+                font-size: 14px;
+                color: #6e6e6e;
+            }
+            h4::before {
+                content: url('img/icons/location.png');
+                display: inline;
+                width: 20px;
+                margin-right: 3px;
+            }
+            ul.__detalhes {
+                width: 200px;
+                height: 136px;
+                margin: 26px auto;
+                border-top: 1px solid #d8d8d8;
+                border-bottom: 1px solid #d8d8d8;
+                li {
+                    color: #6e6e6e;
+                    margin: 12px 0;
+                    img {
+                        width: 20px;
+                        margin-right: 4px;
+                        margin-bottom: -3px;
+                    }
+                }
+                li.bairro {
+                    margin-top: 30px;
+                    margin-bottom: 0;
+                    font-weight: 100;
+                    font-size: 14px;
+                    color: #6e6e6e;
+                }
+                li.bairro::before {
+                    content: url('img/icons/location.png');
+                    display: inline;
+                    width: 20px;
+                    margin-right: 3px;
+                }
+                li.diferenciais {
+                    font-weight: 500;
+                }
+                li.diferenciais::before {
+                    content: '!';
+                    font-weight: 700;
+                    margin-right: 6px;
+                    padding: 0 3px;
+                    color: purple;
+                }
+            }
+            h5.preco {
+                font-weight: 700;
+                font-style: italic;
+                color: purple;
+                display: inline;
+                font-size: 22px;
+                margin-top: 20px;
+            }  
+            h5.rs {
+                font-weight: 700;
+                font-style: italic;
+                color: purple;
+                display: inline;
+            }
+            h5.centavos {
+                font-style: italic;
+                color: purple;
+                display: inline;
+                font-size: 12px;
+                margin-left: -4px;
+                font-weight: 100;
+            }
+            a, p {
+                color: #414141;
+                width: 200px;
+                margin: 6px auto;
+            }
+            a {
+                font-size: 18px;
+                font-weight: 700;
+                color: purple;
+                text-transform: uppercase;
+                margin-top: 30px;
+            }
+            p {
+                height: 80px;
+                color: #6e6e6e;
+                font-size: 12px;
+            }
+            a.permalink {
+                background-color: purple;
+                color: #fff;
+                padding: 8px 40px;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+@media(min-width: 1024px) {
+    .destaques {
+        padding: 0 0 90px 0;
+        &__content {
+            width: 960px;
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            grid-gap: 20px;
+            margin-bottom: 60px;
+            &__item {
+                margin-top: -30px;
+                width: 300px;
+            }
+        }
+    }
+}
