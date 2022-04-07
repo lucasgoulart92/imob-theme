@@ -2,12 +2,20 @@
 
 > Ainda trabalhando a versão mobile
 
+
+
 ## Recursos
 desenvolvidos a partir de Custom Post Types
 + Aba imóveis¹
 + Aba de depoimentos de clientes
 
+
 ### ¹É necessário instalar o plugin Advanced Custom Fields para adicionar as informações dos imóveis
 + Metros quadrados do imóvel, representado pela slug 'area_m'
 + N° de quartos, representado pela slug 'quartos'
 + Bairro do imóvel, representado pela slug 'bairro'
+
+
+## Recursos futuros
+- [ ] Campo customizado para Whatsapp, Nome, Logo e endereço
+- [ ] Sistema de busca por tags dentro do site
