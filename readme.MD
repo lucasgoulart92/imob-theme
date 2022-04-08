@@ -17,5 +17,6 @@ desenvolvidos a partir de Custom Post Types
 
 
 ## Recursos futuros
-- [ ] Campo customizado para Whatsapp, Nome, Logo e endereço
+- [ ] Arrumar botão "Ver todos"
 - [ ] Sistema de busca por tags dentro do site
+- [ ] Estilizar menu do cabeçalho

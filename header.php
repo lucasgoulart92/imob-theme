@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php bloginfo('template_url');?>/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <title>Vinicios Leite</title>
+    <title>Imob System by Lucas Goulart</title>
 </head>
 <body>
 
@@ -27,8 +27,6 @@
             </button>
             
             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-
-            <img src="<?php bloginfo('template_url');?>/img/logo-white.png" alt="">
         </nav>
 
     </div>
@@ -38,7 +36,6 @@
     <div class="header__1024px">
 
         <div class="header__1024px__contatos">
-            <p class="telefone"><img class="whats" src="<?php bloginfo('template_url');?>/img/icons/whatswhite.png" alt="">(55) 991066092</p>
             <div class="header__1024px__contatos__horarios">
 
                 <p class="horario">Horário de funcionamento:</p>

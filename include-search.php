@@ -2,9 +2,6 @@
 
     <div class="search__content">
         <h2>Como é o imóvel dos seus sonhos?</h2>
-
-        
-        
     </div>
 </div>
 

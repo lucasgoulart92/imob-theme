@@ -107,22 +107,10 @@
 
 @media(min-width: 1024px) {
     .search {
-        margin: 0;
-        padding: 0;
-        min-height: 0;
-        max-height: 700px;
-        background-image: none;
+        margin-top: 0;
         &__content {
-            padding: 0;
-            position: absolute;
-            top: 320px;
-            left: 50%;
-        }
-        video {
-            display: initial;
-            width: 100%;
-            z-index: -1;
-            position: relative;
+            padding: 120px 0;
+            text-align: center;
         }
     }
 }
